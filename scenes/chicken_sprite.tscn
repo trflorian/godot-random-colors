@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://itig4q2sgvra"]
+
+[ext_resource type="Texture2D" uid="uid://g0ol80ntjrm5" path="res://assets/Free Chicken Sprites.png" id="1_n68j2"]
+[ext_resource type="Script" path="res://scenes/random_color_sprite.gd" id="2_ucvaj"]
+
+[node name="ChickenSprite" type="Sprite2D"]
+texture = ExtResource("1_n68j2")
+offset = Vector2(0.5, -0.5)
+hframes = 4
+vframes = 2
+script = ExtResource("2_ucvaj")

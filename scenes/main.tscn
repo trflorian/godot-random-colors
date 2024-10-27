@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://1wqn3k3hhamb"]
+
+[ext_resource type="Script" path="res://scripts/sprite_spawner.gd" id="1_6sa8j"]
+[ext_resource type="PackedScene" uid="uid://itig4q2sgvra" path="res://scenes/chicken_sprite.tscn" id="2_ch34c"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(10, 10)
+
+[node name="SpriteSpawner" type="Node2D" parent="."]
+script = ExtResource("1_6sa8j")
+scene_to_spawn = ExtResource("2_ch34c")
+num_x = 7
+num_y = 3
+spacing = 16.0
+use_hsv = true
